@@ -3,8 +3,8 @@
 packages = ["php82", "php82Packages.composer", "nodejs_22"]
 
 [phases.build]
-# Standard Laravel build steps
-cmds = ["composer install --no-dev --optimize-autoloader", "npm install", "npm run build"]
+# Standard Laravel build steps with cache clear
+cmds = ["composer install --no-dev --optimize-autoloader", "npm install", "npm run build", "php artisan config:cache", "php artisan view:cache"]
 
 [phases.start]
 cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
