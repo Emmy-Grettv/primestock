@@ -1,8 +1,10 @@
 [phases.setup]
-packages = ["php82", "nodejs_22", "composer"]
+# Use specific nixpkg names for better reliability
+packages = ["php82", "php82Packages.composer", "nodejs_22"]
 
 [phases.build]
-cmd = "composer install --no-dev --optimize-autoloader && npm install && npm run build"
+# Standard Laravel build steps
+cmds = ["composer install --no-dev --optimize-autoloader", "npm install", "npm run build"]
 
 [phases.start]
 cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
