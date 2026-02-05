@@ -1,5 +1,5 @@
 [phases.setup]
-packages = ["php82", "nodejs_18"]
+packages = ["php82", "nodejs_22"]
 
 [phases.build]
 cmd = "composer install --no-dev --optimize-autoloader && npm install && npm run build"
