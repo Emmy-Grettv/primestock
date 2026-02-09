@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Prime Logic</title>
+    <title>Loyal Spare Parts</title>
     <link rel="icon" type="image/png" href="{{ asset('installer/img/favicon/favicon-16x16.png') }}" sizes="16x16"/>
     <link rel="icon" type="image/png" href="{{ asset('installer/img/favicon/favicon-32x32.png') }}" sizes="32x32"/>
     <link rel="icon" type="image/png" href="{{ asset('installer/img/favicon/favicon-96x96.png') }}" sizes="96x96"/>
@@ -17,7 +17,7 @@
 <div class="master">
     <div class="box">
         <div class="header">
-			<img src="{{ asset('images/dark.png') }}" height="40px" style="margin-bottom: 15px;" alt="Prime Logic">
+			<img src="{{ asset('images/dark.png') }}" height="40px" style="margin-bottom: 15px;" alt="Loyal Spare Parts">
             <h1 class="header__title">@yield('title')</h1>
         </div>
         <ul class="step">

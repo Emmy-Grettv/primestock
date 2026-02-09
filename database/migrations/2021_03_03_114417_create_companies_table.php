@@ -58,8 +58,8 @@ class CreateCompaniesTable extends Migration
             // Creating entries using DB
             // So that no observer will be called
             DB::table('companies')->insert([
-                'name' => 'Prime Logic',
-                'short_name' => 'Prime Logic',
+                'name' => 'Loyal Spare Parts',
+                'short_name' => 'Loyal Spare Parts',
                 'email' => 'company@example.com',
                 'phone' => '+9199999999',
                 'address' => '7 street, city, state, 762782',

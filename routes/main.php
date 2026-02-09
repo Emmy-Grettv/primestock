@@ -13,7 +13,7 @@ Route::get('{path}', function () {
         // Front Store Warehouse
         $frontStoreDetails = Common::getStoreWarehouse();
 
-        $appName = "Prime Logic";
+        $appName = "Loyal Spare Parts";
         $appVersion = File::get(public_path() . '/version.txt');
         $modulesData = Common::moduleInformations();
         $themeMode = session()->has('theme_mode') ? session('theme_mode') : 'light';
